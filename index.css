@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    background-color: rgb(109, 156, 156);
+    margin: 20px;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.mainsec{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.sec1{
+    width: 20%;
+    height: 60%;
+}
+.sec1 img{
+    width: 50px;
+
+}
+
+.sec2{
+    width: 80%;
+    
+}
+.sec2:hover{
+    background-color: #ccc; /* Add a different background color on hover if desired */
+    color: green;
+}
+.logocontainer{
+    width: 5%;
+   
+}
+.logocontainer img{
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  
+}
+#mainname{
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+}
+#mainname1{
+    font-size: medium;
+    color: black;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    #mainname{
+        font-size: 1em;
+        color: black;
+        text-transform: uppercase;
+    }
+    #mainname1{
+        font-size: 1em;
+        color: black;
+        text-transform: uppercase;
+
+    }
+    .searchbarelement{
+        background-color: rgb(226, 224, 236);  
+        margin: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1px;
+        font-size: .5em;
+        text-decoration: none;
+        color: inherit;
+    
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+        background-color: rgb(61, 201, 19);
+        margin: 10px;
+        font-size: .5em;
+    
+    }
+    .logocontainer{
+        width: 10%;
+       
+    }
+    .searchbar{
+        
+        background-color:rgb(254, 254, 255); 
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Vertical centering */
+        justify-content: center; 
+        font-size: .5em;
+    }
+    .searchbarelement:hover {
+        background-color: #ccc;
+        color: rgb(235, 129, 8);
+        margin: 10px;
+        font-size: 1em; /* Adjusted font size for hover */
+    }
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgb(254, 254, 255); 
+ 
+}
+.searchbar{
+    width: 55%;
+    background-color:rgb(254, 254, 255); 
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertical centering */
+    justify-content: center; 
+}
+.searchbarelement{
+    width: 25%;
+    background-color: rgb(226, 224, 236);  
+    margin: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1px;
+    font-size: small.5em;
+    text-decoration: none;
+    color: inherit;
+
+}
+.searchbarelement:hover {
+    background-color: #ccc; /* Add a different background color on hover if desired */
+    color: green;
+    margin: 10px;
+    font-size: 20px;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, background-color 0.5s ease-in-out,font-size 0.5s ease-in-out;
+
+}

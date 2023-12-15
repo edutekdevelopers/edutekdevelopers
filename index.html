@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+    .divprc{
+      text-align: center;
+      margin: 50px;
+      padding: 50px;
+      background-color: #A28089;
+    }
+    .divprc h1{
+      padding-bottom: 50px;
+    }
+    .divprc:hover{
+      background-color: gray;
+      font-size: 20px;
+      transition: width 0.5s ease-in-out, height 0.5s ease-in-out, background-color 0.5s ease-in-out,font-size 0.5s ease-in-out;
+
+    }
+    .longterm{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #ffde22;
+      margin: 30px;
+      padding-left: 20px;
+    }
+    .headercolor{
+      background-color: blueviolet;
+      margin-bottom: 10px;
+    }
+  </style>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <header >
+    <div class="logocontainer"><img src="logo.jpg" alt=""></div>
+    <div class="navbar"><div id="mainname">edutek software development</div>
+    <div id="mainname1">complete school it solutions</div></div>
+    <div class="searchbar">
+        <a href="index.html" class="searchbarelement">home</a>
+        <a href="aboutus.html" class="searchbarelement">about us</a>
+        <a href="products.html"class="searchbarelement">products</a>
+        <a href="clients.html"class="searchbarelement">clients</a>
+        <a href="gallery.html"class="searchbarelement">gallary</a>
+        <a href="team.html"class="searchbarelement">our team</a>
+    </div>
+
+
+</header>
+<hr>
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="image1.jpg" alt="Image 1">
+  </div>
+
+  <div class="mySlides">
+    <img src="image2.jpg" alt="Image 2">
+  </div>
+
+  <div class="mySlides">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+</div>
+<div class="divprc">
+  <h1>Your privacy is our responsibility
+  </h1>
+  <p>We believe that trust is paramount in a relationship. We do not own or sell your data, and we most certainly do not bank on advertising-based business models. The only way we make money is from the software license fees you pay us.</p>
+</div>
+<div class="longterm">
+  <div>
+    <h2 class="headercolor">Long-term commitment</h2>
+    <p>We take pride in running a sustainable business that’s powered by you, our customer.</p>
+  </div>
+  <div>
+    <h1>User Friendly Approch</h1>
+    <p>We belive in Simlicity and robust desing for smooth functioing .</p>
+  </div>
+  <div>
+    <h1>Customer-first philosophy</h1>
+    <p>In all these years, it's our customers' trust and goodwill <br>
+      that has helped us establish a strong position in the market. <br>No matter the size of your business, we're here to help you grow.</p>
+  </div>
+</div>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds (adjust as needed)
+  }
+</script>
+<footer>
+  <div style="display: flex;width: 100%;">
+  <div style="background-color: #ffde22;width: 50%;margin-bottom: 10px;padding: 10px;text-transform: uppercase;">
+  <h2>adress</h2>
+  <p><span>gulbarga address:</span>shop no.2 millat nagar</p>
+  </div>
+  <div style="background-color: #ffde22;width: 50%;margin-bottom: 10px;">
+    <h2>contact details</h2>
+    <p><span>email</span>eduteksupport@gmail.com <br>
+      <span>mobile no</span>7204815535</p>
+</div></div>
+  <div style="text-align: center;background-color: antiquewhite;padding: 10px;">
+    <p>&copy; 2023 Edutek. All rights reserved. | Designed by Mohamed Fayazuddin</p></div>
+
+</footer>
+
+</body>
+</html>
